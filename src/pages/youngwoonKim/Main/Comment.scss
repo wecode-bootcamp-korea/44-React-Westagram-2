@@ -1,0 +1,15 @@
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+
+  p {
+    margin: 0 20px 0 0;
+    &:hover {
+      color: red;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
