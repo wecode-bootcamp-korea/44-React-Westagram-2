@@ -1,6 +1,7 @@
-@import '../../../styles/reset.scss';
-@import '../../../styles/variable.scss';
-@import '../../../styles/common.scss';
+@import '../../../styles/reset';
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+@import '../../../styles/common';
 
 body {
   @include flexCenter;
@@ -12,9 +13,9 @@ body {
     border-radius: 5px;
 
     .westaLogo {
-      font-size: 108px;
-      font-family: Lobster;
       margin: 63px;
+      font-family: Lobster;
+      font-size: 108px;
     }
 
     .idInput {
@@ -31,22 +32,26 @@ body {
       font-weight: bold;
     }
 
-    Button {
+    .onButton {
+      @include ableButton;
+      width: 365px;
+      height: 50px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .offButton {
       @include disabledButton;
       width: 365px;
       height: 50px;
       border: none;
       border-radius: 5px;
-
-      &possible {
-        @include ableButton;
-      }
     }
 
     .forgotPW {
-      font-size: 18px;
-      color: #333c83;
       padding-top: 90px;
+      color: #333c83;
+      font-size: 18px;
       &:hover {
         cursor: pointer;
       }

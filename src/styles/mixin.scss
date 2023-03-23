@@ -1,0 +1,34 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ableButton {
+  background-color: rgb(40, 163, 211);
+  color: whitesmoke;
+}
+
+@mixin disabledButton {
+  background-color: rgb(111, 179, 206);
+  color: rgb(199, 196, 196);
+}
+
+@mixin navIcon {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+@mixin iconStyle {
+  width: 28px;
+  height: 28px;
+  margin: 0 4px;
+}
+
+@mixin commonUl {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style: none;
+}

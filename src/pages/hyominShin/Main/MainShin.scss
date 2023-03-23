@@ -12,8 +12,8 @@ ul {
 /* 네비게이션 */
 nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   border-bottom: 1px solid lightgray;
 }
@@ -32,11 +32,11 @@ nav {
 }
 
 .v-Line {
-  height: 30px;
   width: 1px;
+  height: 30px;
   border-width: 0;
-  color: gray;
   background-color: gray;
+  color: gray;
 }
 
 .iconStyle {
@@ -80,8 +80,8 @@ margin: 0;
 }
 
 .searchInput:focus {
-  background-position: 4% center;
   outline: none;
+  background-position: 4% center;
   text-align: left;
 }
 
@@ -128,12 +128,12 @@ text-align: center;
 }
 
 .profileFeed {
+  display: flex;
+  align-items: center;
   height: 20px;
   margin-top: 15px;
   margin-bottom: 20px;
   padding-left: 7px;
-  display: flex;
-  align-items: center;
 }
 
 .profileFeedImg {
@@ -148,14 +148,14 @@ text-align: center;
 }
 
 .profilePic {
-  border-radius: 100%;
   width: 28px;
   height: 28px;
+  border-radius: 100%;
 }
 
 .articleBody {
-  height: 100vh;
   width: 65vh;
+  height: 100vh;
 }
 .articleHead {
   display: flex;
@@ -170,10 +170,10 @@ text-align: center;
 }
 */
 .articleFeedImg {
-  height: 60vh;
   width: 100%;
-  object-fit: cover;
+  height: 60vh;
   border-bottom: 1px solid gray;
+  object-fit: cover;
 }
 
 .articleFeedIcon {
@@ -186,27 +186,27 @@ text-align: center;
 }
 
 .articleLikeInfo {
-  margin-top: 10px;
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
 ul.commentList {
-  margin-left: 5px;
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 .smallHeart {
   width: 14px;
-  margin-right: 5px;
   margin-top: 3px;
+  margin-right: 5px;
   float: right;
 }
 
 .commentAndFeedTime li .miniSubGray {
-  float: right;
   margin-top: 4px;
   margin-right: 3px;
+  float: right;
   cursor: default;
 }
 /*
@@ -217,31 +217,31 @@ ul.commentList {
 */
 .feedTimeCount {
   margin-left: 5px;
-  font-size: 14px;
   color: #8e8e8e;
+  font-size: 14px;
 }
 
 .commentAndFeedTime {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   height: 15vh;
 }
 
 .commentDiv {
   position: relative;
-  border-top: 1px solid lightgray;
   height: 45px;
   margin-top: 10px;
+  border-top: 1px solid lightgray;
 }
 
 #commentInput {
   position: absolute;
-  height: 39px;
   width: 85%;
-  border: none;
-  margin-left: 17px;
+  height: 39px;
   margin-top: 2px;
+  margin-left: 17px;
+  border: none;
   background-color: #fafafa;
 }
 
@@ -252,12 +252,12 @@ ul.commentList {
 #commentReply {
   position: absolute;
   top: 0;
-  bottom: 0;
   right: 6px;
+  bottom: 0;
   width: 52px;
+  border-style: none;
   background-color: #fafafa;
   color: #0099ff;
-  border-style: none;
 }
 
 #commentReply:disabled {
@@ -276,19 +276,19 @@ ul.commentList {
 /* 메인 오른쪽 스토리 및 추천 */
 
 .mainRight {
-  height: 700px;
-  width: 30%;
-  margin-left: 20px;
   flex-direction: column;
+  width: 30%;
+  height: 700px;
+  margin-left: 20px;
 }
 
 .profileCard {
+  display: flex;
+  align-items: center;
   height: 56px;
   margin-top: 10px;
   margin-bottom: 25px;
   padding-left: 12px;
-  display: flex;
-  align-items: center;
 }
 
 .profileCard div span {
@@ -296,22 +296,22 @@ ul.commentList {
 }
 
 .storyRedCircle {
-  border-radius: 100%;
-  border: 1px solid red;
-  height: 42px;
-  width: 42px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid red;
+  border-radius: 100%;
 }
 
 .miniProfileCard {
+  display: flex;
+  align-items: center;
   height: 26px;
   margin-top: 15px;
   margin-bottom: 32px;
   padding-left: 7px;
-  display: flex;
-  align-items: center;
 }
 
 .miniProfileCard div span {
@@ -319,15 +319,15 @@ ul.commentList {
 }
 
 .miniProfileCard img {
-  border-radius: 100%;
-  height: 40px;
   width: 40px;
+  height: 40px;
+  border-radius: 100%;
 }
 
 .myProfile {
-  border-radius: 100%;
-  height: 56px;
   width: 56px;
+  height: 56px;
+  border-radius: 100%;
 }
 
 .PeopleName {
@@ -336,49 +336,49 @@ ul.commentList {
 
 .allView {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
 }
 
 .find-more {
+  color: #262626;
   font-size: 12px;
   font-weight: 600;
-  color: #262626;
 }
 
 .storyDiv {
-  border: 1px solid lightgray;
-  border-radius: 2px;
   width: 100%;
   height: 35%;
   margin-bottom: 10px;
   overflow: hidden;
+  border: 1px solid lightgray;
+  border-radius: 2px;
 }
 
 .recommendDiv {
-  border: 1px solid lightgray;
-  border-radius: 2px;
   width: 100%;
   height: 25%;
   margin-bottom: 10px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
 }
 
 .miniProfileCard button {
   top: 0;
-  bottom: 0;
   right: 6px;
-  margin-left: 102px;
+  bottom: 0;
   width: 52px;
+  margin-left: 102px;
+  border-style: none;
   background-color: #fafafa;
   color: #0095f6;
-  border-style: none;
 }
 
 .instaInfo {
-  padding: 2px;
   justify-content: left;
   height: 189px;
+  padding: 2px;
 }
 
 .instaInfo p {
