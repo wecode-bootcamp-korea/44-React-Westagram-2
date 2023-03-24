@@ -4,20 +4,15 @@ import FeedIcon from './FeedIcon';
 import LikeInfo from './LikeInfo';
 import './ArticleBody.scss';
 import '../../../../styles/common.scss';
-import { click } from '@testing-library/user-event/dist/click';
 
 const ArticleBody = props => {
-  const [like, setLike] = useState(['images/heart.png'], ['images/heart.png']);
-  const [likeChange, setLikeChange] = useState(false);
+  const [like, setLike] = useState(['images/heart.png']);
 
-  const clickChangeLike = likeChange => {
-    console.log('찍히면 야옹해');
-    if (likeChange === false) {
-      return setLike('images/fillheart.png'), setLikeChange(true);
-    } else {
-      return setLike('images/heart.png'), setLikeChange(false);
-    }
-  };
+  // const likeCheck = i => {
+  //   return like[i] === 'images/heart.png'
+  //     ? setLike('images/fillheart.png')
+  //     : setLike('images/heart.png');
+  // };
 
   return (
     <div className="articleBody">
@@ -40,14 +35,26 @@ const ArticleBody = props => {
                 return (
                   <li className="comment" key={i}>
                     <span className="textBold">someone</span>
+
                     <span> {props.commentArray[i]} </span>
+
                     <img
                       className="smallHeart"
-                      src={like}
-                      onClick={() => {
-                        clickChangeLike(likeChange);
+                      src={like[i]}
+                      onClick={e => {
+                        let copy = [...like];
+                        copy.map((element, j) => {
+                          if (i === j) {
+                            copy[j] =
+                              element === 'images/heart.png'
+                                ? (copy[i] = 'images/fillheart.png')
+                                : (copy[i] = 'images/heart.png');
+                          }
+                        });
+                        setLike(copy);
                       }}
                     />
+
                     <span
                       className="miniSubGray"
                       onClick={() => {
@@ -81,8 +88,11 @@ const ArticleBody = props => {
             type="submit"
             onClick={() => {
               let copyComment = [...props.commentArray];
+              let copyLike = [...like];
               copyComment.unshift(props.inputComment);
               props.setCommentArray(copyComment);
+              copyLike.unshift('images/heart.png');
+              setLike(copyLike);
               props.setInputComment('');
             }}
           >

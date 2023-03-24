@@ -9,7 +9,12 @@ import MainRight from './MainRight/MainRight';
 
 const Main = () => {
   const [inputComment, setInputComment] = useState('');
-  const [commentArray, setCommentArray] = useState(['어디냐?', '글내려라']);
+  const [commentArray, setCommentArray] = useState(['글내려라']);
+
+  // const [commentObject, setcommentObject] = useState({
+  //   comment: commentArray,
+  //   heart: like,
+  // });
 
   return (
     <>
@@ -21,6 +26,8 @@ const Main = () => {
           setInputComment={setInputComment}
           commentArray={commentArray}
           setCommentArray={setCommentArray}
+          // commentObject={commentObject}
+          // setcommentObject={setcommentObject}
         />
         {/* <!-- 메인 오른쪽, 스토리와 연관사람 추천--> */}
         <MainRight />
