@@ -1,0 +1,49 @@
+.mainRight {
+  flex-direction: column;
+  width: 30%;
+  height: 700px;
+  margin-left: 20px;
+  float: left;
+
+  .storyDiv {
+    width: 100%;
+    height: 35%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+
+    & ul {
+      height: 100%;
+    }
+
+    .allView {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+
+      .subGray {
+        color: #8e8e8e;
+        font-size: 14px;
+      }
+      .find-more {
+        color: #262626;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .instaInfo {
+    justify-content: left;
+    height: 189px;
+    padding: 2px;
+
+    & p {
+      display: inline;
+      color: #8e8e8e;
+      font-size: 15px;
+    }
+  }
+}

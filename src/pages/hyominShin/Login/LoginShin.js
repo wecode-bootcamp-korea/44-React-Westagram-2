@@ -27,7 +27,7 @@ const Login = () => {
   };
 
   return (
-    <div className="body">
+    <div className="loginbody">
       <form className="loginWindow">
         <p className="westaLogo">westagram</p>
         <input

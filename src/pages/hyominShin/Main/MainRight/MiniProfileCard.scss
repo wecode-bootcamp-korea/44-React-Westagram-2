@@ -1,0 +1,47 @@
+.miniProfileCard {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  margin-top: 15px;
+  margin-bottom: 32px;
+  padding-left: 7px;
+
+  & img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+
+  & div span {
+    display: block;
+  }
+
+  .storyRedCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-right: 7px;
+    border: 1px solid red;
+    border-radius: 100%;
+
+    .myProfile {
+      width: 41px;
+      height: 41px;
+      border-radius: 100%;
+    }
+  }
+
+  .peopleName {
+    .miniTextBold {
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .miniSubGray {
+      color: #8e8e8e;
+      font-size: 14px;
+    }
+  }
+}

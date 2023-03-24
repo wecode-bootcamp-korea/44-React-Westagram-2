@@ -1,0 +1,59 @@
+.recommendDiv {
+  width: 100%;
+  height: 25%;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+
+  .allView {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    .subGray {
+      color: #8e8e8e;
+      font-size: 14px;
+    }
+
+    .find-more {
+      color: #262626;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .miniProfileCard {
+    & button {
+      top: 0;
+      right: 6px;
+      bottom: 0;
+      width: 52px;
+      margin-left: 102px;
+      border-style: none;
+      background-color: #fafafa;
+      color: #0095f6;
+    }
+
+    .myProfile {
+      margin-right: 7px;
+    }
+
+    .peopleName {
+      margin-left: 7px;
+
+      .miniTextBold {
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      .miniSubGray {
+        color: #8e8e8e;
+        font-size: 14px;
+      }
+    }
+
+    .submit {
+    }
+  }
+}

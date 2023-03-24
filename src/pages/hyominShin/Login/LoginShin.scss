@@ -3,9 +3,10 @@
 @import '../../../styles/mixin';
 @import '../../../styles/common';
 
-body {
+.loginbody {
   @include flexCenter;
   margin-top: 10%;
+
   .loginWindow {
     @include flexCenter;
     flex-direction: column;
