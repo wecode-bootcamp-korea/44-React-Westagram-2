@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ArticleHead from './ArticleHead';
 import FeedIcon from './FeedIcon';
 import LikeInfo from './LikeInfo';
 import './ArticleBody.scss';
 import '../../../../styles/common.scss';
+import { click } from '@testing-library/user-event/dist/click';
 
 const ArticleBody = props => {
+  const [like, setLike] = useState(['images/heart.png'], ['images/heart.png']);
+  const [likeChange, setLikeChange] = useState(false);
+
+  const clickChangeLike = likeChange => {
+    console.log('찍히면 야옹해');
+    if (likeChange === false) {
+      return setLike('images/fillheart.png'), setLikeChange(true);
+    } else {
+      return setLike('images/heart.png'), setLikeChange(false);
+    }
+  };
+
   return (
     <div className="articleBody">
       <article className="feeds">
@@ -28,7 +41,13 @@ const ArticleBody = props => {
                   <li className="comment" key={i}>
                     <span className="textBold">someone</span>
                     <span> {props.commentArray[i]} </span>
-                    <img className="smallHeart" src="images/heart.png" />
+                    <img
+                      className="smallHeart"
+                      src={like}
+                      onClick={() => {
+                        clickChangeLike(likeChange);
+                      }}
+                    />
                     <span
                       className="miniSubGray"
                       onClick={() => {

@@ -4,7 +4,7 @@ import '../../../styles/common.scss';
 
 const Nav = () => {
   return (
-    <div className="header">
+    <nav className="header">
       <div className="navLeft">
         <img className="instarIcon" src="/images/instagram.png" />
         <hr className="vLine" />
@@ -19,7 +19,7 @@ const Nav = () => {
         <img className="iconStyle" src="images/heart.png" />
         <img className="iconStyle" src="images/profile.png" />
       </div>
-    </div>
+    </nav>
   );
 };
 

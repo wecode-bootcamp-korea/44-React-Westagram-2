@@ -9,23 +9,20 @@ import MainRight from './MainRight/MainRight';
 
 const Main = () => {
   const [inputComment, setInputComment] = useState('');
-  // const [replyButton, setReplyButton] = useState(disabled)
   const [commentArray, setCommentArray] = useState(['어디냐?', '글내려라']);
 
   return (
     <>
       <Nav />
       <div className="mainBody">
-        {/* <!-- 프로필 박스 --> */}
+        {/* <!-- 메인 피드 --> */}
         <ArticleBody
           inputComment={inputComment}
           setInputComment={setInputComment}
           commentArray={commentArray}
           setCommentArray={setCommentArray}
         />
-
         {/* <!-- 메인 오른쪽, 스토리와 연관사람 추천--> */}
-
         <MainRight />
       </div>
     </>
