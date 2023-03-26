@@ -4,12 +4,27 @@
   justify-content: space-between;
   padding: 0;
 
-  p {
+  .heartBtn {
+    flex-grow: 1;
+    margin: 0 15px 0 0;
+    color: #ff0000;
+    font-size: 25px;
+    text-align: right;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .removeBtn {
     margin: 0 20px 0 0;
     &:hover {
       color: red;
       text-decoration: underline;
       cursor: pointer;
     }
+  }
+
+  div {
+    font-size: 17px;
   }
 }
