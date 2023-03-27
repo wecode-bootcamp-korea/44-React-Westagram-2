@@ -5,8 +5,10 @@ import LikeInfo from './LikeInfo';
 import './ArticleBody.scss';
 import '../../../../styles/common.scss';
 
-const ArticleBody = props => {
+const ArticleBody = () => {
   const [like, setLike] = useState(['images/heart.png']);
+  const [inputComment, setInputComment] = useState('');
+  const [commentArray, setCommentArray] = useState(['글내려라']);
 
   // const likeCheck = i => {
   //   return like[i] === 'images/heart.png'
@@ -31,17 +33,18 @@ const ArticleBody = props => {
           <LikeInfo />
           <div className="commentAndFeedTime">
             <ul className="commentList">
-              {props.commentArray.map(function (a, i) {
+              {commentArray.map(function (a, i) {
                 return (
                   <li className="comment" key={i}>
                     <span className="textBold">someone</span>
 
-                    <span> {props.commentArray[i]} </span>
+                    <span> {commentArray[i]} </span>
 
                     <img
                       className="smallHeart"
                       src={like[i]}
-                      onClick={e => {
+                      alt="heart"
+                      onClick={() => {
                         let copy = [...like];
                         copy.map((element, j) => {
                           if (i === j) {
@@ -58,9 +61,9 @@ const ArticleBody = props => {
                     <span
                       className="miniSubGray"
                       onClick={() => {
-                        let copyComment = [...props.commentArray];
+                        let copyComment = [...commentArray];
                         copyComment.splice(i, 1);
-                        props.setCommentArray(copyComment);
+                        setCommentArray(copyComment);
                       }}
                     >
                       댓글삭제
@@ -76,9 +79,9 @@ const ArticleBody = props => {
           <input
             className="commentInput"
             onChange={e => {
-              props.setInputComment(e.target.value);
+              setInputComment(e.target.value);
             }}
-            value={props.inputComment}
+            value={inputComment}
             type="text"
             name="commentInput"
             placeholder="댓글달기..."
@@ -87,13 +90,13 @@ const ArticleBody = props => {
             className="commentReply"
             type="submit"
             onClick={() => {
-              let copyComment = [...props.commentArray];
+              let copyComment = [...commentArray];
               let copyLike = [...like];
-              copyComment.unshift(props.inputComment);
-              props.setCommentArray(copyComment);
+              copyComment.unshift(inputComment);
+              setCommentArray(copyComment);
               copyLike.unshift('images/heart.png');
               setLike(copyLike);
-              props.setInputComment('');
+              setInputComment('');
             }}
           >
             게시

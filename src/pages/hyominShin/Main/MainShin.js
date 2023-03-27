@@ -1,6 +1,6 @@
 /* eslint-disabled  */
 
-import React, { useState } from 'react';
+import React from 'react';
 import Nav from './nav';
 import './MainShin.scss';
 import '../../../styles/common.scss';
@@ -8,9 +8,6 @@ import ArticleBody from './Article/ArticleBody';
 import MainRight from './MainRight/MainRight';
 
 const Main = () => {
-  const [inputComment, setInputComment] = useState('');
-  const [commentArray, setCommentArray] = useState(['글내려라']);
-
   // const [commentObject, setcommentObject] = useState({
   //   comment: commentArray,
   //   heart: like,
@@ -21,14 +18,7 @@ const Main = () => {
       <Nav />
       <div className="mainBody">
         {/* <!-- 메인 피드 --> */}
-        <ArticleBody
-          inputComment={inputComment}
-          setInputComment={setInputComment}
-          commentArray={commentArray}
-          setCommentArray={setCommentArray}
-          // commentObject={commentObject}
-          // setcommentObject={setcommentObject}
-        />
+        <ArticleBody />
         {/* <!-- 메인 오른쪽, 스토리와 연관사람 추천--> */}
         <MainRight />
       </div>
