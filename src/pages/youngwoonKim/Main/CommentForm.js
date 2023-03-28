@@ -27,9 +27,9 @@ function CommentForm() {
   return (
     <>
       <CommentBoard commentList={commentList} commentRemove={commentRemove} />
-      <form className="commentForm">
+      <form className="commentForm" onSubmit={commentSubmit}>
         <input value={inputValue} onChange={handleInput} />
-        <button onClick={commentSubmit}>게시</button>
+        <button>게시</button>
       </form>
     </>
   );
