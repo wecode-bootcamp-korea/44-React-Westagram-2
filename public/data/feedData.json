@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "post": "스니커즈의 문화와 역사가 바로 여기, 에이맥스...",
+    "postID": "kasina_official",
+    "postID2": "kasina_official",
+    "feedImage": "https://images.unsplash.com/photo-1590330297626-d7aff25a0431?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+  },
+  {
+    "id": 2,
+    "post": "아이앱 스튜디오 10주년 기념 티셔츠 팩 발매 연기...",
+    "postID": "worksout-official",
+    "postID2": "worksout-official",
+    "feedImage": "https://images.unsplash.com/photo-1523398002811-999ca8dec234?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=810&q=80"
+  },
+  {
+    "id": 3,
+    "post": "지원 마감 전에, 어서 지원하세요! 안드로이드 개발자 되기...",
+    "postID": "likelion",
+    "postID2": "likelion",
+    "feedImage": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=840&q=80"
+  },
+  {
+    "id": 4,
+    "post": "RECTO의 새로운 공간을 소개합니다. 렉토의 아울렛...",
+    "postID": "recto_official",
+    "postID2": "recto_official",
+    "feedImage": "https://images.unsplash.com/photo-1574427797991-b086946fa9e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+  }
+]
