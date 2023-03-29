@@ -1,20 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ArticleHead.scss';
 import '../../../../styles/common.scss';
 
-const ArticleHead = () => {
+const ArticleHead = props => {
   return (
     <div className="articleHead">
       <div>
         <div className="profileFeed">
-          <img className="profileFeedImg" src="images/good6.jpg" />
+          <img
+            className="profileFeedImg"
+            src={props.profileImg}
+            alt="profile"
+          />
           <div className="peopleName">
-            <span className="textBold">Hyomins-013</span>
-            <span className="subGray">효민입니다.</span>
+            <span className="textBold">{props.nickName}</span>
+            <span className="subGray">{props.subText}</span>
           </div>
         </div>
       </div>
-      <img className="iconStyle" src="images/dots.png" />
+      <img className="iconStyle" src="images/dots.png" alt="meatballMenu" />
     </div>
   );
 };

@@ -6,39 +6,6 @@ import '../../../styles/common.scss';
 const Nav = () => {
   // const [isActiveSearch, setIsActiveSearch] = useState(false);
   const [searchText, setSearchText] = useState('');
-  // const [filtedPeople, setFiltedPeople] = useState([]);
-  const [otherPeople, setOtherPeople] = useState([
-    {
-      id: 1,
-      name: 'Jinkyung',
-      subText: '당황스럽네요',
-      pfImg: '/images/당황스;.jpeg',
-    },
-    {
-      id: 2,
-      name: 'React',
-      subText: '공부하세요.',
-      pfImg: '/images/React.png',
-    },
-    {
-      id: 3,
-      name: 'Sanghun',
-      subText: '진짜 싫어요!',
-      pfImg: '/images/fuckyouCODE.jpeg',
-    },
-    {
-      id: 4,
-      name: 'Sanghun2',
-      subText: '아이디어 내는 중',
-      pfImg: '/images/Sanghun.jpeg',
-    },
-    {
-      id: 5,
-      name: 'imcat',
-      subText: '야옹',
-      pfImg: '/images/고양이.jpeg',
-    },
-  ]);
 
   // function newArray(searchText) {
   //   otherPeople.filter(function (a) {
@@ -64,19 +31,12 @@ const Nav = () => {
             // setFiltedPeople(newArray(searchText));
           }}
         />
-        {searchText !== '' ? (
-          <SearchModal
-            searchText={searchText}
-            otherPeople={otherPeople}
-            // filtedPeople={filtedPeople}
-            setOtherPeople={setOtherPeople}
-          />
-        ) : null}
+        {searchText !== '' ? <SearchModal searchText={searchText} /> : null}
       </div>
       <div className="navIcon">
-        <img className="iconStyle" src="images/explore.png" />
-        <img className="iconStyle" src="images/heart.png" />
-        <img className="iconStyle" src="images/profile.png" />
+        <img className="iconStyle" src="images/explore.png" alt="?" />
+        <img className="iconStyle" src="images/heart.png" alt="?" />
+        <img className="iconStyle" src="images/profile.png" alt="?" />
       </div>
     </nav>
   );

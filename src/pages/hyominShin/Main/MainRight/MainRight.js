@@ -25,9 +25,9 @@ const MainRight = () => {
       <RecommendDiv />
 
       <div className="instaInfo">
-        <p>Instagram 정보 ∙ 지원 ∙ 홍보 센터 ∙ API ∙ </p>
-        <p>채용정보 ∙ 개인정보처리방침 ∙ 약관 ∙ </p>
-        <p>디렉터리 ∙ 프로필 ∙ 해시태그 ∙ 언어</p>
+        {INSTA_INFOMATION.map(a => (
+          <p key={a.id}>{a.info}</p>
+        ))}
         <br />
         <br />
         <p>© 2020 INSTAGRAM FROM FACEBOOK</p>
@@ -35,5 +35,19 @@ const MainRight = () => {
     </div>
   );
 };
+
+const INSTA_INFOMATION = [
+  { id: 1, info: 'Instagram 정보 ∙', path: '~' },
+  { id: 2, info: '지원 ∙', path: '~' },
+  { id: 3, info: '홍보 센터 ∙', path: '~' },
+  { id: 4, info: 'API ∙', path: '~' },
+  { id: 5, info: '채용정보 ∙', path: '~' },
+  { id: 6, info: '개인정보처리방침 ∙', path: '~' },
+  { id: 7, info: '약관 ∙', path: '~' },
+  { id: 8, info: '디렉터리 ∙', path: '~' },
+  { id: 9, info: '프로필 ∙', path: '~' },
+  { id: 10, info: '해시태그 ∙', path: '~' },
+  { id: 11, info: '언어', path: '~' },
+];
 
 export default MainRight;
