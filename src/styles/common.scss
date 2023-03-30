@@ -1,3 +1,25 @@
-* {
-  box-sizing: border-box;
+span.subGray {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+span.miniSubGray {
+  font-size: 11px;
+  color: #8e8e8e;
+}
+
+.textBold {
+  font-weight: bold;
+}
+
+.miniTextBold {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style: none;
 }

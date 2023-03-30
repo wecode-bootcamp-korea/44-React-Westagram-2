@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+
+  .navLeft {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    margin-left: 25px;
+
+    .instarIcon {
+      width: 27px;
+      height: 27px;
+    }
+
+    .vLine {
+      width: 1px;
+      height: 30px;
+      border-width: 0;
+      background-color: gray;
+      color: gray;
+    }
+
+    .navWestagram {
+      font-family: Lobster;
+      font-size: 32px;
+    }
+  }
+
+  .searchForm {
+    display: inline-block;
+
+    .searchInput {
+      width: 185px;
+      height: 25px;
+      padding: 4px 10px 3px 26px;
+      border: 1px solid lightgray;
+      border-radius: 3px;
+      text-align: center;
+
+      &:focus {
+        outline: none;
+        background-position: 4% center;
+        text-align: left;
+      }
+    }
+  }
+
+  .navIcon {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-right: 25px;
+
+    .iconStyle {
+      width: 28px;
+      height: 28px;
+      margin: 0 4px;
+    }
+  }
+}

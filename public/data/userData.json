@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nickName": "Hyomins-013",
+    "subText": "효민입니다.",
+    "profileImg": "images/good6.jpg",
+    "feedImg": "images/695986339.887071.JPG"
+  },
+  {
+    "id": 2,
+    "nickName": "Wecode",
+    "subText": "여러분도 할 수 있어요.",
+    "profileImg": "images/wecode-logo.webp",
+    "feedImg": "images/wecode-feed.jpeg"
+  },
+  {
+    "id": 3,
+    "nickName": "Sanghun",
+    "subText": "코딩 너무 어려워요",
+    "profileImg": "/images/fuckyouCODE.jpeg",
+    "feedImg": "images/profileVVV.jpeg"
+  },
+  {
+    "id": 4,
+    "nickName": "Jinkyung",
+    "subText": "당황스럽네요..",
+    "profileImg": "images/당황스;.jpeg",
+    "feedImg": "images/괜찮아요.jpeg"
+  }
+]

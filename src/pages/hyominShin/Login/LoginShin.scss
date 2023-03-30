@@ -1,0 +1,61 @@
+@import '../../../styles/reset';
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+@import '../../../styles/common';
+
+.loginbody {
+  @include flexCenter;
+  margin-top: 10%;
+
+  .loginWindow {
+    @include flexCenter;
+    flex-direction: column;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+
+    .westaLogo {
+      margin: 63px;
+      font-family: Lobster;
+      font-size: 108px;
+    }
+
+    .idInput {
+      width: 60%;
+      height: 50px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .passwordInput {
+      width: 60%;
+      height: 50px;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    .onButton {
+      @include ableButton;
+      width: 365px;
+      height: 50px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .offButton {
+      @include disabledButton;
+      width: 365px;
+      height: 50px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .forgotPW {
+      padding-top: 90px;
+      color: #333c83;
+      font-size: 18px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

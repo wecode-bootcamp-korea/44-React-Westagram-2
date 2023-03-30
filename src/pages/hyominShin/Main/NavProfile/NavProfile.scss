@@ -1,0 +1,39 @@
+.modalBack {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  background-color: lightgrey;
+}
+
+.profileModal {
+  position: absolute;
+  z-index: 100;
+  left: 74%;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  margin-top: 40px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+
+  .manuSelect {
+    display: flex;
+    padding: 10px;
+
+    &.hover {
+      cursor: default;
+    }
+  }
+
+  .logout {
+    margin-left: 2px;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+  }
+}
