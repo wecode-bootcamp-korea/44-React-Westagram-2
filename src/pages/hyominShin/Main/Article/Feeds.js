@@ -11,6 +11,7 @@ const Feeds = ({ user }) => {
   const [inputComment, setInputComment] = useState('');
   const [commentArray, setCommentArray] = useState([]);
 
+  //
   // const heartSwitch = i => {
   //   // setIsClicked(prev => !prev);
   //   let copy = [...like];

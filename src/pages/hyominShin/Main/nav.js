@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 import SearchModal from './SearchModal/SearchModal';
+import NavProfile from './NavProfile/NavProfile';
 import './nav.scss';
 import '../../../styles/common.scss';
 
 const Nav = () => {
   // const [isActiveSearch, setIsActiveSearch] = useState(false);
   const [searchText, setSearchText] = useState('');
+  const [isActive, setIsActive] = useState(false);
 
-  // function newArray(searchText) {
-  //   otherPeople.filter(function (a) {
-  //     return a.name.includes(searchText);
-  //   });
-  // }
+  const modalSwitching = () => {
+    setIsActive(prev => !prev);
+  };
+
+  // const showModal = isArctive => {
+  //   {
+  //     return isActive ? <NavProfile /> : null;
+  //   }
+  // };
 
   return (
     <nav className="header">
@@ -28,7 +34,6 @@ const Nav = () => {
           value={searchText}
           onChange={e => {
             setSearchText(e.target.value);
-            // setFiltedPeople(newArray(searchText));
           }}
         />
         {searchText !== '' ? <SearchModal searchText={searchText} /> : null}
@@ -36,7 +41,18 @@ const Nav = () => {
       <div className="navIcon">
         <img className="iconStyle" src="images/explore.png" alt="?" />
         <img className="iconStyle" src="images/heart.png" alt="?" />
-        <img className="iconStyle" src="images/profile.png" alt="?" />
+        <img
+          className="iconStyle"
+          src="images/profile.png"
+          alt="?"
+          onClick={modalSwitching}
+        />
+        {isActive ? (
+          <>
+            <div className="modalBack" onClick={modalSwitching} />
+            <NavProfile />
+          </>
+        ) : null}
       </div>
     </nav>
   );

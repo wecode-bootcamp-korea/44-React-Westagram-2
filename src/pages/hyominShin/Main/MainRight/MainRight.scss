@@ -6,6 +6,10 @@
   margin-left: 20px;
   float: left;
 
+  @media (max-width: 947px) {
+    display: none;
+  }
+
   .storyDiv {
     width: 100%;
     height: 35%;
